@@ -3,4 +3,5 @@
 mkdocs
 mkdocs-material
 pip-tools
+pre-commit
 pytest
