@@ -1,5 +1,6 @@
 -r base.in
 
+copier
 mkdocs
 mkdocs-material
 pip-tools
