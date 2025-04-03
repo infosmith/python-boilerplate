@@ -1,0 +1,13 @@
+# questions
+project_name:
+    type: str
+    help: Project name?
+
+project_description:
+    type: str
+    help: Project description?
+
+project_python_version:
+    type: str
+    help: Minimum Python version?
+    default: 3.12
