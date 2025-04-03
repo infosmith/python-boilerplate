@@ -176,7 +176,7 @@ ehthumbs.db
 env.bak/
 env/
 ENV/
-environments/
+environments/*.env
 fake-eggs/
 htmlcov/
 Icon
