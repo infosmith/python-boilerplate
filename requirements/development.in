@@ -1,4 +1,6 @@
 -r base.in
 
+mkdocs
+mkdocs-material
 pip-tools
 pytest
