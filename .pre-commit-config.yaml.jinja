@@ -63,3 +63,24 @@ repos:
         args:
           - "--force-single-line-imports"
           - "--line-length=120"
+
+
+  - repo: local
+    hooks:
+      - id: bearer
+        name: bearer
+        entry: bearer scan
+        language: system
+        types:
+          - python
+
+  - repo: https://github.com/PyCQA/bandit
+    rev: v1.8.3
+    hooks:
+      - id: bandit
+
+  - repo: https://github.com/pypa/pip-audit
+    rev: v2.8.0
+    hooks:
+      - id: pip-audit
+        args: ["-r", "requirements.txt"]
