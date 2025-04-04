@@ -1,6 +1,7 @@
 -r base.in
 
 copier
+j2lint
 mkdocs
 mkdocs-material
 pip-tools

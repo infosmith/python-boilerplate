@@ -2,13 +2,13 @@ from setuptools import find_packages
 from setuptools import setup
 
 setup(
-    name="{{project_name}}",
-    description="{{project_description}}",
+    name="{{ project_name }}",
+    description="{{ project_description }}",
     version="0.1.0",
-    python_requires=">={{project_python_version}}",
+    python_requires=">={{ project_python_version }}",
     classifiers=[
         "Natural Language :: English",
-        "Programming Language :: Python :: 3"
+        "Programming Language :: Python :: {{ project_python_version }}"
     ],
     packages=find_packages(),
 )
