@@ -50,3 +50,8 @@ repos:
     rev: v1.1.0
     hooks:
       - id: j2lint
+
+  - repo: https://github.com/mrtazz/checkmake
+    rev: 0.2.2
+    hooks:
+      - id: checkmake
