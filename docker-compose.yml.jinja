@@ -1,0 +1,37 @@
+name: {{ project_name | trim | lower }}
+networks:
+  {{ project_name | trim | lower }}:
+services:
+
+  rdbms:
+    image: mysql
+    container_name: rdbms
+    hostname: rdbms
+    restart: unless-stopped
+    networks:
+      - {{ project_name | trim | lower }}
+    env_file:
+      - "environments/mysql.env"
+    volumes:
+      - ./volumes/rdbms:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  application:
+    container_name: {{ project_name | trim | lower }}-${PROJECT_ENVIRONMENT}
+    build:
+      context: .
+      dockerfile: ./dockerfiles/{{ project_name | trim | lower }}/Dockerfile
+      platforms:
+        - linux/amd64
+        - linux/arm64
+      tags:
+        - "{{ project_name | trim | lower }}:latest"
+    env_file:
+      - environments/${PROJECT_ENVIRONMENT}.env
+    hostname: {{ project_name | trim | lower }}
+    networks:
+      - {{ project_name | trim | lower }}
+    ports:
+      - "8000:80"
+    restart: unless-stopped

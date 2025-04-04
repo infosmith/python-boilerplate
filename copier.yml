@@ -1,13 +1,34 @@
 # questions
 project_name:
-    type: str
-    help: Project name?
+  type: str
+  help: Project name?
 
 project_description:
-    type: str
-    help: Project description?
+  type: str
+  help: Project description?
 
 project_python_version:
-    type: str
-    help: Minimum Python version?
-    default: 3.12
+  type: str
+  help: Minimum Python version?
+  default: 3.12
+
+testing_database_name:
+  type: str
+  help: Testing database name?
+  default: testing
+
+testing_database_rootpassword:
+  type: str
+  help: Testing database password?
+  default: testing
+
+testing_database_user:
+  type: str
+  help: Testing database user?
+  default: testing
+
+testing_database_user_password:
+  type: str
+  help: Testing database user password?
+  default: testing
+
