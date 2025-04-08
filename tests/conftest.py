@@ -2,5 +2,5 @@ import pytest
 
 
 @pytest.fixture
-def fixture():
-    pass
+def environments():
+    return ["development", "production"]
