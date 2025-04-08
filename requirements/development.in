@@ -1,5 +1,6 @@
 -r base.in
 
+blacken-docs
 bump-my-version
 copier
 ipdb
