@@ -6,6 +6,9 @@ new projects are initialized.
 
 
 
+## Project Requirements
 
+- [commitizen][commitizen]
 
-[copier]: https://copier.readthedocs.io/en/stable/
+[copier]: https://copier.readthedocs.io/en/stable/[commitizen]: https://github.com/commitizen-tools/commitizen
+[commitizen]: https://github.com/commitizen-tools/commitizen
