@@ -2,11 +2,11 @@
 
 bump-my-version
 copier
+ipdb
+ipython
 j2lint
 mkdocs
 mkdocs-material
 pip-tools
 pre-commit
 pytest
-ipdb
-ipython
