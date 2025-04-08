@@ -89,7 +89,7 @@ repos:
     rev: v2.8.0
     hooks:
       - id: pip-audit
-        args: ["-r", "requirements.txt"]
+        files: requirements/.*\.txt
 
   - repo: https://github.com/mrtazz/checkmake.git
     rev: 0.2.2
