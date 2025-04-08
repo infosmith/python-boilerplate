@@ -1,5 +1,6 @@
 -r base.in
 
+bump-my-version
 copier
 j2lint
 mkdocs
