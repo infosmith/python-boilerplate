@@ -3,7 +3,5 @@
 #   - https://prettier.io/docs/en/configuration.html
 
 endOfLine = "lf"
-indentSize = 2
-indentStyle = "space"
 tabWidth = 2
 useTabs = false

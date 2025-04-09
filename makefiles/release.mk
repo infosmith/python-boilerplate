@@ -1,19 +1,31 @@
 .PHONY: all clean test
 
+CURRENT_VERSION := $(shell cz version -p)
+
 release-version-show:
-	bump-my-version show-bump
+	# Show the current version number.
+	cz version -p
+
+release-version-bump:
+	# Automatically bump the version number based on the semver scheme.
+	cz bump --version-scheme=semver --files-only
 
 release-version-bump-major:
-	bump-my-version bump major --tag
+	# Manually bump the version number to the next major version.
+	cz bump --increment MAJOR --version-scheme=semver --files-only
 
 release-version-bump-minor:
-	bump-my-version bump minor --tag
+	# Manually bump the version number to the next minor version.
+	cz bump --increment MINOR --version-scheme=semver --files-only
 
 release-version-bump-patch:
-	bump-my-version bump patch --tag
+	# Manually bump the version number to the next patch version.
+	cz bump --increment PATCH --version-scheme=semver --files-only
 
 release-version-tag:
-	git tag -a $(bump-my-version show current_version) -m "Version: $(bump-my-version show current_version)"
+	# Tag the release with the new version number.
+	git tag -a $(CURRENT_VERSION) -m "Version: $(CURRENT_VERSION)"
 
-release-branch:
-	git push origin $(bump-my-version show current_version)
+release-changelog-prepare:
+	# Prepare the changelog for the new release.
+	cz changelog

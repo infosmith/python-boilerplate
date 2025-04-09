@@ -1,9 +1,9 @@
 [project]
-name = "{{ project_name }}"
+name = "python-boilerplate"
 version = "0.1.0"
-description = "{{ project_description }}"
+description = "Python project template managed with Copier."
 readme = "README.md"
-requires-python = ">={{ project_python_version }}"
+requires-python = ">=3.12"
 
 
 [tool.bandit]

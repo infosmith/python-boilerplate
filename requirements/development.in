@@ -1,7 +1,7 @@
 -r base.in
 
 blacken-docs
-bump-my-version
+commitizen
 copier
 ipdb
 ipython
