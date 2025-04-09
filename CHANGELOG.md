@@ -1,26 +1,38 @@
-# Changelog
-
-All notable changes to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
 ## Unreleased
+
+### Feat
+
+- **docs**: add Make rules for mkdocs
 - **qa**: integrate dead-code checking
 
 ## 0.1.0 (2025-04-08)
 
 ### Feat
 
-- **build**: add docker boilerplate
-- **build**: add Python project boilerplate
-- **build**: configure dependency management
-- **build**: integrate release management
+- **build**:  integrate release management
+- **editorconfig**: integrate editorconfig
+- **commitzen**: integrate commit msg linter
+- **build**: integrate code checkers
+- add debugging dependencies
+- **docker**: add container boilerplate
+- **linting**: add Jinja linting
+- **environments**: add environment files
+- automate new project initialization.
 - **docs**: add documentation management
-- **qa**: add Jinja linting
-- **qa**: integrate code checkers
-- **qa**: integrate commit msg linter
-- **qa**: integrate editorconfig
-- **qa**: integrate git hooks management
-- **qa**: integrate test runner
-- **security**: manage environment variables
+- **tests**: integrate test runner
+- **build**: package project
+- **git**: integrate git hooks management
+- **envars**: manage environment variables
+- **dependencies**: configure dependency management
+
+### Fix
+
+- remove makefiles submodule
+- remove duplicate declaration
+- limit pip audits to requirement file changes
+- exclude tests directory from scanning
+- remove git submodule
+- address checkmate warnings
+- fix environments directory loading
+- add missing environment variable files
+- **git**: integrate git hooks management
