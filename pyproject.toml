@@ -14,7 +14,7 @@ bump_message = "release $current_version → $new_version"
 update_changelog_on_bump = false
 version = "0.1.0"
 version_provider = "commitizen"
-version_scheme = "semvar"
+version_scheme = "semver"
 version_files = [
     "pyproject.toml",
     "setup.py:version",
